@@ -24,7 +24,7 @@ class HistoryViewController : UIViewController, UITableViewDelegate, UITableView
         
         let CellID = "HistoryCell"
         
-        let cell = tableView.dequeueReusableCellWithIdentifier(CellID, forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(CellID, forIndexPath: indexPath) as! UITableViewCell
         
         let match = self.history[indexPath.row]
         

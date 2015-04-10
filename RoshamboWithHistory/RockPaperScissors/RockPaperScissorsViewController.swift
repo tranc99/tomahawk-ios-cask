@@ -43,7 +43,7 @@ class RockPaperScissorsViewController: UIViewController {
         
         // Get the Storyboard and ResultViewController
         var storyboard = UIStoryboard (name: "Main", bundle: nil)
-        var resultVC = storyboard.instantiateViewControllerWithIdentifier("ResultViewController") as ResultViewController
+        var resultVC = storyboard.instantiateViewControllerWithIdentifier("ResultViewController") as! ResultViewController
         
         // Communicate the match to the ResultViewController
         resultVC.match = match
@@ -53,7 +53,7 @@ class RockPaperScissorsViewController: UIViewController {
     @IBAction func showHistory(sender: AnyObject) {
         
         let storyboard = self.storyboard
-        let controller = self.storyboard?.instantiateViewControllerWithIdentifier("HistoryViewController") as HistoryViewController
+        let controller = self.storyboard?.instantiateViewControllerWithIdentifier("HistoryViewController")as! HistoryViewController
         
         controller.history = self.history
         
