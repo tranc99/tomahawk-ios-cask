@@ -41,7 +41,7 @@ struct StoryNode {
         
         self.adventure = adventure
         
-        message = dictionary["message"] as String
+        message = dictionary["message"] as! String
         connections = [Connection]()
         
         message = message.stringByReplacingOccurrencesOfString("\\n", withString: "\n\n")

@@ -19,7 +19,7 @@ class RootTableViewController: UITableViewController {
         super.viewDidLoad()
 
         // Initialize the Adventures
-        let adventurePlistPaths = NSBundle.mainBundle().pathsForResourcesOfType("plist", inDirectory: nil) as [String]
+        let adventurePlistPaths = NSBundle.mainBundle().pathsForResourcesOfType("plist", inDirectory: nil) as! [String]
         
         for plistPath in adventurePlistPaths {
             
@@ -44,7 +44,7 @@ class RootTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var cell = self.tableView.dequeueReusableCellWithIdentifier("Cell") as UITableViewCell
+        var cell = self.tableView.dequeueReusableCellWithIdentifier("Cell") as! UITableViewCell
         var adventure = adventures[indexPath.row]
         cell.textLabel!.text = adventure.credits.title
         cell.detailTextLabel!.text = adventure.credits.author
@@ -63,7 +63,7 @@ class RootTableViewController: UITableViewController {
         let firstNodeInTheAdventure = selectedAdventure.startNode
 
         // Get a StoryNodeController from the Storyboard
-        let storyNodeController = self.storyboard!.instantiateViewControllerWithIdentifier("StoryNodeViewController") as StoryNodeViewController
+        let storyNodeController = self.storyboard!.instantiateViewControllerWithIdentifier("StoryNodeViewController") as! StoryNodeViewController
         
         // Set the story node so that we will see the start of the story
         storyNodeController.storyNode = firstNodeInTheAdventure

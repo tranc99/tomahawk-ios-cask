@@ -17,8 +17,8 @@ class Adventure {
     init(dictionary: [String : AnyObject]) {
         
         // Get the two dictionaries
-        let creditsDictionary = dictionary["credits"] as [String : String]
-        let storyNodesDictionary = dictionary["nodes"] as [String : AnyObject]
+        let creditsDictionary = dictionary["credits"] as! [String : String]
+        let storyNodesDictionary = dictionary["nodes"] as! [String : AnyObject]
         
         // Create the credits
         credits = Credits(dictionary: creditsDictionary)
@@ -28,12 +28,12 @@ class Adventure {
         
         // Add a Story Node for each item in storyNodesDictionary
         for (key: String, dictionary: AnyObject) in storyNodesDictionary {
-            storyNodes[key] = StoryNode(dictionary: dictionary as [String : AnyObject], adventure: self)
+            storyNodes[key] = StoryNode(dictionary: dictionary as! [String : AnyObject], adventure: self)
         }
         
         
         // Set the first node
-        let startNodeKey = dictionary["startNodeKey"] as String
+        let startNodeKey = dictionary["startNodeKey"]as! String
         startNode = storyNodes[startNodeKey]!
     }
 }
