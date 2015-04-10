@@ -22,7 +22,7 @@ class StoryNodeViewController: UIViewController, UITableViewDelegate, UITableVie
         super.viewDidLoad()
         
         // Set the image
-        if let imageName = storyNode.imageName? {
+        if let imageName = storyNode.imageName {
             self.adventureImageView.image = UIImage(named: imageName)
         }
         
@@ -49,7 +49,7 @@ class StoryNodeViewController: UIViewController, UITableViewDelegate, UITableVie
         func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
             //TODO: Dequeue a cell and populate it with text from the correct prompt.
             
-            let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as UITableViewCell
+            let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! UITableViewCell
     
             cell.textLabel!.text = "Place holder prompt"
             
@@ -60,7 +60,7 @@ class StoryNodeViewController: UIViewController, UITableViewDelegate, UITableVie
     // MARK: - Actions
     
     @IBAction func restartStory() {
-        let controller = self.navigationController!.viewControllers[1] as UIViewController
+        let controller = self.navigationController!.viewControllers[1] as! UIViewController
         self.navigationController?.popToViewController(controller, animated: true)
     }
     
