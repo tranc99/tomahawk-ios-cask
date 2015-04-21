@@ -1,2 +1,2 @@
-ios-nonodegree-course2-apps
+ios-nanodegree-course2-apps
 ===========================
