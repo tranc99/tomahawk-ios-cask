@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1015C6EA1B8CCE4E0079EE5F /* MYOAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1015C6E91B8CCE4D0079EE5F /* MYOAViewController.swift */; };
 		4D82F7BF1A3A1BE5004CF358 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D82F7BE1A3A1BE5004CF358 /* AppDelegate.swift */; };
 		4D82F7C11A3A1BE5004CF358 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D82F7C01A3A1BE5004CF358 /* ViewController.swift */; };
 		4D82F7C41A3A1BE5004CF358 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D82F7C21A3A1BE5004CF358 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1015C6E91B8CCE4D0079EE5F /* MYOAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYOAViewController.swift; sourceTree = "<group>"; };
 		4D82F7B91A3A1BE5004CF358 /* TheTiger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheTiger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D82F7BD1A3A1BE5004CF358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D82F7BE1A3A1BE5004CF358 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			children = (
 				4D82F7BE1A3A1BE5004CF358 /* AppDelegate.swift */,
 				4D82F7C01A3A1BE5004CF358 /* ViewController.swift */,
+				1015C6E91B8CCE4D0079EE5F /* MYOAViewController.swift */,
 				4D82F7C21A3A1BE5004CF358 /* Main.storyboard */,
 				4D82F7C51A3A1BE5004CF358 /* Images.xcassets */,
 				4D82F7C71A3A1BE5004CF358 /* LaunchScreen.xib */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1015C6EA1B8CCE4E0079EE5F /* MYOAViewController.swift in Sources */,
 				4D82F7C11A3A1BE5004CF358 /* ViewController.swift in Sources */,
 				4D82F7BF1A3A1BE5004CF358 /* AppDelegate.swift in Sources */,
 			);
@@ -405,6 +409,7 @@
 				4D82F7DA1A3A1BE6004CF358 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D82F7DB1A3A1BE6004CF358 /* Build configuration list for PBXNativeTarget "TheTigerTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				4D82F7DD1A3A1BE6004CF358 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
