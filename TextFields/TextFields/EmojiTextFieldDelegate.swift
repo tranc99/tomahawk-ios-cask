@@ -64,6 +64,21 @@ class EmojiTextFieldDelegate : NSObject, UITextFieldDelegate {
     }
     
     func textFieldDidBeginEditing(textField: UITextField) {
-        textField.text = ""
+        //textField.text = ""
+        textField.textColor = UIColor(red: 0.2, green: 0.0, blue: 0.0, alpha: 0.5)
     }
+    
+    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+        return true
+    }
+    
+    func textFieldShouldEndEditing(textField: UITextField) -> Bool {
+        return true
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        textField.text = "Look, a trick by Cobra and his boys"
+    }
+    
+    
 }
