@@ -11,10 +11,24 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
 
+    @IBOutlet weak var favTable: UITableView!
     // Model
     
     let favoriteThings = [
         //TODO: Fill this array with your favorite things. Then use this collection to populate your table.
+    
+        "Ice cream",
+        "Rice and sushi",
+        "Salad",
+        "Steak",
+        "Dessert Wine",
+        "Grape juice",
+        "Fruits",
+        "Seafood",
+        "Poultry",
+        "Pork",
+        "Meat of all kinds",
+        "Sumpcious desserts"
     ]
 
     // Mark: Table View Data Source Methods
@@ -27,8 +41,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
       
         // TODO: Implement this method to get the correct row count
+        let itemCount = favoriteThings.count
         let placeholderCount = 2
-        return placeholderCount
+        return itemCount
     }
 
     
@@ -45,7 +60,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
       // 4. return the cell.
         
         let placeholderCell = UITableViewCell()
+        placeholderCell.textLabel?.text = favoriteThings[indexPath.row]
         return placeholderCell
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        favTable.delegate = self
     }
 }
 
