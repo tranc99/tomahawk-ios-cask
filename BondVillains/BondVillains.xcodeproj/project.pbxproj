@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1058AFE91B8DCE2500FB978C /* VillainDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1058AFE81B8DCE2500FB978C /* VillainDetailViewController.swift */; };
 		4D04CC021A1D1E5700FAB0D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04CC011A1D1E5700FAB0D8 /* AppDelegate.swift */; };
 		4D04CC041A1D1E5700FAB0D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04CC031A1D1E5700FAB0D8 /* ViewController.swift */; };
 		4D04CC071A1D1E5700FAB0D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D04CC051A1D1E5700FAB0D8 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1058AFE81B8DCE2500FB978C /* VillainDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VillainDetailViewController.swift; sourceTree = "<group>"; };
 		4D04CBFC1A1D1E5700FAB0D8 /* BondVillains.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BondVillains.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D04CC001A1D1E5700FAB0D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D04CC011A1D1E5700FAB0D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				4D04CC031A1D1E5700FAB0D8 /* ViewController.swift */,
+				1058AFE81B8DCE2500FB978C /* VillainDetailViewController.swift */,
 				4D04CC211A1D261800FAB0D8 /* Villain.swift */,
 				4D04CC011A1D1E5700FAB0D8 /* AppDelegate.swift */,
 				4D04CC051A1D1E5700FAB0D8 /* Main.storyboard */,
@@ -218,6 +221,7 @@
 				4D04CC041A1D1E5700FAB0D8 /* ViewController.swift in Sources */,
 				4D04CC021A1D1E5700FAB0D8 /* AppDelegate.swift in Sources */,
 				4D04CC221A1D261800FAB0D8 /* Villain.swift in Sources */,
+				1058AFE91B8DCE2500FB978C /* VillainDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +413,7 @@
 				4D04CC1D1A1D1E5700FAB0D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D04CC1E1A1D1E5700FAB0D8 /* Build configuration list for PBXNativeTarget "BondVillainsTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				4D04CC201A1D1E5700FAB0D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
