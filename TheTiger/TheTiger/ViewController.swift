@@ -14,5 +14,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
     }
+    
+    deinit {
+        println("Popped a ViewController off the stack")
+    }
+    
 }
 
